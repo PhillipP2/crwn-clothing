@@ -1,0 +1,32 @@
+.input-group {
+  --padding: 0.5em;
+  font-size: 1.125rem;
+  letter-spacing: 0.03em;
+  position: relative;
+
+  label {
+    position: absolute;
+    font-size: inherit;
+    line-height: 0;
+    left: var(--padding);
+    transform: translateY(-1em);
+    transition: transform 0.5s, font-size 0.5s;
+    cursor: text;
+  }
+
+  .form-input {
+    display: block;
+    font-size: inherit;
+    letter-spacing: 0.03em;
+    width: 100%;
+    padding: var(--padding);
+    border: 0;
+    border-bottom: 1px solid #000;
+
+    &:focus + label,
+    &:not([value='']) + label {
+      transform: translateY(-3.5em);
+      font-size: 0.8em;
+    }
+  }
+}

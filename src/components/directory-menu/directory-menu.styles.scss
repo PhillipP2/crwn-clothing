@@ -1,0 +1,16 @@
+.directory-menu {
+  display: grid;
+  gap: 1.125rem;
+
+  @media screen and (min-width: 40rem) {
+    grid-template-columns: repeat(6, 1fr);
+
+    & > * {
+      grid-column: span 2;
+    }
+
+    & > *:nth-child(n + 4) {
+      grid-column: span 3;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.header {
+  --header-padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 'logo . nav';
+  align-items: center;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding: var(--header-padding);
+  position: relative;
+
+  .logo-container {
+    grid-area: logo;
+  }
+}
+
+nav {
+  grid-area: nav;
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 2.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .signout {
+    cursor: pointer;
+  }
+}

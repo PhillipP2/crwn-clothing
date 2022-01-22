@@ -1,0 +1,17 @@
+.sign-in-page {
+  display: flex;
+  max-width: 55rem;
+  padding: 1rem;
+  margin-inline: auto;
+  gap: 3rem;
+
+  & > * {
+    flex-basis: 100%;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

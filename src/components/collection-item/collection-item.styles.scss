@@ -1,0 +1,49 @@
+.collection-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr min-content;
+  grid-template-areas:
+    'image image image'
+    'name . price';
+  min-height: calc(50vw + 4rem);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+
+  @media screen and (min-width: 40rem) {
+    min-height: calc(25vw + 4rem);
+  }
+
+  button {
+    width: 100%;
+    padding: 0.25rem;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #151515;
+    color: #fff;
+  }
+
+  .background-image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .item-name {
+    grid-area: name;
+  }
+
+  .price {
+    grid-area: price;
+  }
+}

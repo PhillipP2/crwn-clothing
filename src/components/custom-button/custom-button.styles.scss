@@ -1,0 +1,41 @@
+.custom-button {
+  font: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.875em 3em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: #000;
+    outline: 1px solid #000;
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #357ae8;
+      outline: none;
+    }
+  }
+
+  &.bg-white {
+    color: #000;
+    background-color: #fff;
+    outline: 1px solid #000;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #000;
+      outline: none;
+    }
+  }
+}

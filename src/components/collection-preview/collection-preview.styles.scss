@@ -1,0 +1,12 @@
+.collection-preview:not(:first-child) {
+  margin-top: 1.5rem;
+  // font-family: 'Open Sans Condensed', sans-serif;
+}
+.preview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem;
+  @media screen and (min-width: 40rem) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

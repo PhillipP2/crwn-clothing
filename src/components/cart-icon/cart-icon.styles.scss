@@ -1,0 +1,15 @@
+.cart-icon {
+  width: 1.5rem;
+  position: relative;
+  cursor: pointer;
+
+  .item-count {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 0.75rem;
+    font-weight: bold;
+    user-select: none;
+  }
+}
